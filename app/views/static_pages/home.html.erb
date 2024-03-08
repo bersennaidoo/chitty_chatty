@@ -1,7 +1,13 @@
-<% provide(:title, "Home") %>
-<h1>Chitty Chatty App</h1>
-<p>
-   This is the home page for the 
-   <a href="https://example.org">Chitty Chatty App</a>
-   application
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to the Chitty Chatty App</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="https://google.co.za/">Chitty Chatty App</a>
+    social application
+  </h2>
+
+  <%= link_to "Sign up now!", "#", class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("chitty_chatty.svg", alt: "Chitty Chatty logo", width: "200") %>
