@@ -51,3 +51,6 @@ end
 group :production do
   gem "pg", "1.3.5"
 end
+
+# Use Redis for Action Cable
+gem "redis", "~> 4.0"
