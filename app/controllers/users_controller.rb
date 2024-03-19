@@ -1,15 +1,16 @@
 class UsersController < ApplicationController
 
-  # /users/1
+  # /users/:id
   def show
     @user = User.find(params[:id])
   end
 
-  # /users
+  # /users/new
   def new
     @user = User.new
   end
 
+  # /users
   def create 
     @user = User.new(user_params)
     if @user.save
@@ -20,6 +21,11 @@ class UsersController < ApplicationController
     else
       render "new", status: :unprocessable_entity
     end
+  end
+
+  # /users/:id/edit
+  def edit
+    @user = User.find(params[:id])
   end
   
   private def user_params
