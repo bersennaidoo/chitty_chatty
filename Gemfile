@@ -28,6 +28,8 @@ gem "bootsnap", "1.12.0", require: false
 
 gem "bcrypt",   "3.1.18"
 
+gem 'devise', github: 'heartcombo/devise', branch: 'main'
+
 group :development, :test do
   gem "sqlite3", "~> 1.4"
   gem "debug", "1.5.0",  platforms: %i[ mri mingw x64_mingw ]
