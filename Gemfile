@@ -28,6 +28,12 @@ gem "bootsnap", "1.12.0", require: false
 
 gem "bcrypt",   "3.1.18"
 
+gem "faker",    "2.21.0"
+
+gem "will_paginate", "3.3.1"
+
+gem "bootstrap-will_paginate", "1.0.0"
+
 group :development, :test do
   gem "sqlite3", "~> 1.4"
   gem "debug", "1.5.0",  platforms: %i[ mri mingw x64_mingw ]
